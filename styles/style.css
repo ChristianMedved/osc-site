@@ -1,0 +1,126 @@
+@media (min-width: 1170px){
+html{
+  min-height: 100%;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+body{
+  margin: 0;
+  min-height: 100%;
+  display: grid;
+  flex-direction: column;
+  flex: auto;
+  grid-template-rows: auto 1fr auto;
+}
+
+table{
+  margin: 10px;
+}
+
+h2{
+  margin: 5px;
+}
+.menu {
+    margin: 0px;
+    padding: 0px 5px 0px 5px;
+    list-style: none;
+    height: 32px;
+    border-bottom: 2px solid #DDDDDD;
+    font-family: Arial;
+}
+ 
+/* вкладка меню */
+.menu li {
+    float: left;
+    display: inline;
+    margin: 0px 2px -1px 0px;
+    padding: 5px 25px 5px 25px;
+    cursor: pointer;
+    color: #999999;
+    background: #F4F4F4;
+    border: 2px solid #DDDDDD;
+    font-weight: bold;
+    border-radius: 16 16 0 0;
+}
+
+footer {
+    background: #CCCCFF;
+    padding-left: 10px;
+}
+
+div.with_frame {
+    border-width: 3px 3px 3px 3px;
+    border-style: double;
+    border-color: black;
+    padding: 5pt 5pt 5pt 5pt;
+    margin: 10px 0px 0px 10px;
+    text-align: justify;
+    line-height: 1em;
+}
+
+main {
+  padding: 0px 20px;
+  background: #FFF8CC;
+}
+
+.mem {
+    float: right;
+}
+
+header {
+    background: #CCCCFF;
+}
+
+header h1 {
+      margin: 10px 50px;
+    }
+
+header p {
+      margin: 20px 70px;
+    }
+
+/* активная вкладка меню */
+.tab_active {
+    border-bottom: 2px solid #FFFFFF !important;
+    color: #000000 !important;
+    background: #6495ED !important;
+}
+
+.row > .column {
+  padding: 0px 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 33,3%;
+  margin-top: 20px;
+
+}
+details {
+  display: block;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: .5em;
+  margin-bottom: 10px;
+}
+
+.site_head{
+  border: 0;
+  cellpadding: 4;
+}
+
+.nazv{
+  width: 45%;
+}
+#click-to-hide-2{
+  display: none;
+}
+}

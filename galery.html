@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная|OSC Kirov</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+  </head>
+  <body>
+    <header>
+      <script src="script.js"></script>
+      <script src="mobile.js"></script>
+    </header>
+    <main>
+      <h1>Галерея</h1>
+        <div class="row">
+          <div class="column">
+            <div id="into1"></div>
+          </div>
+          <div class="column">
+            <div id="into2"></div>
+          </div>
+          <div class="column">
+            <div id="into3"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+          let into1 = document.getElementById("into1"),
+              s1 = "";
+              s2 = "";
+              s3 = "";
+          for (let i = 1; i <= 127; i+=3) {
+              s1 += `<img src="./gallery/small/picture (${i}).jpg"><br />`;
+              s2 += `<img src="./gallery/small/picture (${i+1}).jpg"><br />`;
+              s3 += `<img src="./gallery/small/picture (${i+2}).jpg"><br />`;
+          }
+          into1.innerHTML = s1;
+          into2.innerHTML = s2;
+          into3.innerHTML = s3;
+      </script>
+    </main>
+    <footer>
+       <script src="footer.js"></script>
+    </footer>
+  </body>
+</html>
